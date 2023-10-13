@@ -1,0 +1,92 @@
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+#myForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.success {
+    border-color: #4CAF50;
+    background-color: #E9F7EF;
+}
+
+.error {
+    border-color: #E74C3C;
+    background-color: #F7D1CB;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+#result {
+    display: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+#form-data {
+    list-style: none;
+    padding: 0;
+}
+
+#form-data li {
+    margin: 5px 0;
+    font-weight: bold;
+}

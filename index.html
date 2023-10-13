@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Form Example</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" required>
+
+        <label for="num-input">Number Input:</label>
+        <input type="number" id="num-input" required>
+
+        <label for="range-input">Range Input:</label>
+        <input type="range" id="range-input" required>
+
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" required>
+
+        <label for="email-input">Email Input:</label>
+        <input type="email" id="email-input" required>
+
+        <label for="password-input">Password:</label>
+        <input type="password" id="password-input" required>
+        <span class="password-hint">Password should contain small and capital letters, numbers, and special symbols.</span>
+
+        <label for="confirm-password-input">Confirm Password:</label>
+        <input type="password" id="confirm-password-input" required>
+
+        <fieldset>
+            <legend>Radio Buttons:</legend>
+            <input type="radio" name="radio" id="radio1" value="Option 1" required>
+            <label for="radio1">Option 1</label>
+            <input type="radio" name="radio" id="radio2" value="Option 2" required>
+            <label for="radio2">Option 2</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="hidden">
+        <h2>Form Data:</h2>
+        <ul id="form-data"></ul>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
