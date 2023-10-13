@@ -136,3 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return values.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
     }
 });
+
+module.exports = {
+    getFactorial,
+    multiply,
+};
