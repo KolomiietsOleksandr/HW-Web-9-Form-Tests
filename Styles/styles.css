@@ -91,7 +91,7 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
-#factorial-input {
+#factorial-input, #multiply-input {
     width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -99,7 +99,7 @@ button[type="submit"]:hover {
     margin-right: 10px;
 }
 
-#calculate-button {
+#calculate-button, #multiply-button{
     padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
@@ -108,7 +108,11 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-#factorial-result {
+#factorial-result #multiply-result {
     font-size: 18px;
     margin-top: 10px;
+}
+
+.Math{
+    margin-left: 10px;
 }

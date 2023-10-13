@@ -120,4 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
             return 'not a number';
         }
     }
+
+    const multiplyInput = document.getElementById('multiply-input');
+    const multiplyButton = document.getElementById('multiply-button');
+    const multiplyResult = document.getElementById('multiply-result');
+
+    multiplyButton.addEventListener('click', function() {
+        const values = multiplyInput.value.split(/\s+/).map(parseFloat);
+        const result = multiply(...values);
+
+        multiplyResult.textContent = `Result: ${result}`;
+    });
+
+    function multiply(...values) {
+        return values.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+    }
 });
