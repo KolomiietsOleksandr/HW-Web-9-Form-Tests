@@ -92,3 +92,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const factorialInput = document.getElementById('factorial-input');
+    const calculateButton = document.getElementById('calculate-button');
+    const factorialResult = document.getElementById('factorial-result');
+
+    calculateButton.addEventListener('click', function() {
+        const input = factorialInput.value;
+        const result = getFactorial(input);
+        factorialResult.textContent = `Result: ${result}`;
+    });
+
+    function getFactorial(n) {
+        if (typeof n === 'number') {
+            if (n === 0) {
+                return 1;
+            } else if (n < 0) {
+                return 'not a valid input';
+            } else {
+                return n * getFactorial(n - 1);
+            }
+        } else if (typeof n === 'string' && !isNaN(n)) {
+            const number = parseInt(n, 10);
+            return getFactorial(number);
+        } else {
+            return 'not a number';
+        }
+    }
+});
